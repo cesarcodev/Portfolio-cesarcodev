@@ -12,7 +12,7 @@ export const Nav = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0 ">
+    <div className="shadow-md w-full fixed  top-0 left-0 ">
       <div className="md:flex items-center justify-between bg-sky-900 py-4 md:px-24 px-7">
         <div className="font-bold text-lg cursor-pointer flex items-center  text-white">
           <div className=" mr-1 ">
@@ -29,7 +29,7 @@ export const Nav = () => {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-6 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-0 transition-all duration-500 ease-in-out  bg-sky-900 ${
+          className={`md:flex md:items-center text-center md:pb-0 pb-6 absolute md:static  md:z-auto z-[9] left-0 w-full md:w-auto md:pl-0 pl-0 transition-all duration-500 ease-in-out  bg-sky-900 ${
             open ? "top-20 " : "top-[-490px]"
           }`}
         >
