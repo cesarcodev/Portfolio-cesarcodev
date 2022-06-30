@@ -17,7 +17,7 @@ export default function Footer() {
           >
             <a rel="noopener noreferrer" href={link.url} target="_blank">
               <img
-                src={`/${link.name}-white.png`}
+                src={`/portfolio-cesarcodev/${link.name}-white.png`}
                 alt={`icono de ${link.name}`}
                 width={"25px"}
               />
@@ -36,7 +36,7 @@ export default function Footer() {
 
       <div className="font-bold text-lg cursor-pointer flex items-center order-first md:order-last text-white">
         <div className=" mr-1 ">
-          <img src="/LogoC.png" width={"35px"} />
+          <img src="/portfolio-cesarcodev/LogoC.png" width={"35px"} />
         </div>
         Cesarcodev
       </div>

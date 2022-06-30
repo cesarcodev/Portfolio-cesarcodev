@@ -12,7 +12,7 @@ export const Nav = () => {
       <div className="md:flex items-center justify-between bg-sky-900 py-4 md:px-24 px-7">
         <div className="font-bold text-lg cursor-pointer flex items-center  text-white">
           <div className=" mr-1 ">
-            <img src="/LogoC.png" width={"45px"} />
+            <img src="/portfolio-cesarcodev/LogoC.png" width={"45px"} />
           </div>
           Cesarcodev
         </div>
