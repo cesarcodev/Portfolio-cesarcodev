@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
 import { ToggleDarkMode } from "../ToggleDarkMode";
-
+import { Navs } from "../../../data/Links";
 
 export const Nav = () => {
-  let Links = [
-    { name: "INICIO", key: "home" },
-    { name: "SOBRE MI", key: "about" },
-    { name: "POYECTOS", key: "projects " },
-  ];
+ 
   let [open, setOpen] = useState(false);
 
   return (
@@ -33,12 +29,12 @@ export const Nav = () => {
             open ? "top-20 " : "top-[-490px]"
           }`}
         >
-          {Links.map((link) => (
+          {Navs.map((link) => (
             <li
               key={link.name}
               className="md:ml-8 text-xl md:hidden block md:my-0 my-7"
             >
-              <a className="text-white">{link.name}</a>
+              <a className="text-white cursor-pointer">{link.name}</a>
             </li>
           ))}
 
