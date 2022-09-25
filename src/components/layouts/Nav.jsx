@@ -3,9 +3,14 @@ import { BiMenu, BiX } from "react-icons/bi";
 import { ToggleDarkMode } from "../ToggleDarkMode";
 import { Navs } from "../../../data/Links";
 
-export const Nav = () => {
+export const Nav = ({rutaActual, setRutaActual}) => {
  
   let [open, setOpen] = useState(false);
+
+  const clickNav = (key) =>{
+    setRutaActual(key);
+    setOpen(false);
+  }
 
   return (
     <div className="shadow-md w-full fixed  top-0 left-0 ">
@@ -29,12 +34,12 @@ export const Nav = () => {
             open ? "top-20 " : "top-[-490px]"
           }`}
         >
-          {Navs.map((link) => (
+          {Navs.map((link, index) => (
             <li
-              key={link.name}
-              className="md:ml-8 text-xl md:hidden block md:my-0 my-7"
+              key={index}
+              className={`md:ml-8 text-xl md:hidden block md:my-0 my-7 `} 
             >
-              <a className="text-white cursor-pointer">{link.name}</a>
+              <a className="text-white cursor-pointer"   onClick={() => clickNav(link.key)} >{link.name}</a>
             </li>
           ))}
 

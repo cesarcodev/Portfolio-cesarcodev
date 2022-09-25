@@ -1,12 +1,10 @@
-import React from "react";
-
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center md:h-screen items-center md:flex-row  w-full">
-      <div className="w-full md:w-1/2 md:flex md:pr-8 md:justify-end">
+    <div className="flex flex-col justify-center h-full  md:h-screen items-center md:flex-row w-full">
+      <div className="w-full md:w-2/5 md:flex md:pr-8 md:justify-end">
         <img src="/portfolio-cesarcodev/cc.png" className="md:w-96 w-19" />
       </div>
-      <div className="w-full md:w-1/2  flex justify-center">
+      <div className="w-full md:w-3/5  flex justify-center">
         <div className="text-center">
           <p className="text-lg mt-2 md:text-4xl leading-tight font-bold mb-5 ">
             ¡Hola! <br /> Espero que tengas un buen día
