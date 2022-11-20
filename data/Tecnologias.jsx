@@ -3,7 +3,7 @@ export const frontend = [
   { name: "CSS", img: "css.png" },
   { name: "HTML", img: "html.png" },
   { name: "Javascript", img: "js.png" },
-  { name: "ReactJs", img: "react.png" },
+ // { name: "ReactJs", img: "react.png" },
   { name: "Tailwindcss", img: "tailwindcss.png" },
 ];
 

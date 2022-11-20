@@ -4,10 +4,9 @@ import Sidebar from "./components/layouts/Sidebar";
 import Home from "./components/Home";
 import { useState } from "react";
 import About from "./components/About";
-
+import Projects from "./components/Projects";
 function App() {
-
-  const [rutaActual, setRutaActual] = useState('home');
+  const [rutaActual, setRutaActual] = useState("home");
 
   return (
     <div>
@@ -17,11 +16,15 @@ function App() {
           <Sidebar rutaActual={rutaActual} setRutaActual={setRutaActual} />
         </div>
         <div className=" w-4/5 pt-28 pb-36 md:pt-0 md:pb-0">
-          
-          { 
-                rutaActual === 'home' ? <Home /> :  
-                rutaActual === 'about' ? <About /> :  <div>aaaa 494</div> 
-              }
+          {rutaActual === "home" ? (
+            <Home />
+          ) : rutaActual === "about" ? (
+            <About />
+          ) : rutaActual === "projects" ? (
+            <Projects />
+          ) : (
+            <div>aaaa 494</div>
+          )}
         </div>
       </div>
 

@@ -25,7 +25,9 @@ export default function Home() {
               className={"mr-2 w-4 md:w-6"}
             />
             <span>Descargar CV</span>
+            
           </a>
+
         </div>
       </div>
     </div>

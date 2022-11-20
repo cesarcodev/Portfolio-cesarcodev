@@ -13,7 +13,7 @@ export const Nav = ({rutaActual, setRutaActual}) => {
   }
 
   return (
-    <div className="shadow-md w-full fixed  top-0 left-0 ">
+    <div className="shadow-md w-full fixed  z-10 top-0 left-0 ">
       <div className="md:flex items-center justify-between bg-sky-900 py-4 md:px-24 px-7">
         <div className="font-bold text-lg cursor-pointer flex items-center  text-white">
           <div className=" mr-1 ">

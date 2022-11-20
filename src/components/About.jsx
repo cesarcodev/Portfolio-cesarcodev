@@ -3,7 +3,7 @@ import ItemsTechs from "./ItemsTechs";
 export default function About() {
   return (
     <div className="flex flex-col  md:justify-center h-full md:h-screen ">
-      <div className="md:h-2/3 flex flex-col md:flex-row pt-0 md:pt-20 items-center px-0 pb-4 md:pb-0 md:px-20">
+      <div className=" flex flex-col md:flex-row pt-0 md:pt-20 items-center px-0 pb-4 md:pb-0 md:px-20">
         <div className="w-full order-2 md:order-1 md:w-3/5 text-2xl text-justify md:pr-20">
           <p className="mb-2">
             Soy Licenciado en Computación y me especialicé como Desarrollador

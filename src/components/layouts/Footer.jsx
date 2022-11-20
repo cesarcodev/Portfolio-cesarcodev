@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </a>
 
-            <div className="absolute bottom-0 flex flex-col items-center hidden mb-6 group-hover:flex">
+            <div className="absolute bottom-0  flex-col items-center hidden mb-6 group-hover:flex">
               <span className="relative z-10 p-2 text-xs rounded-lg leading-none text-white whitespace-no-wrap bg-black shadow-lg">
                 {link.name}
               </span>
