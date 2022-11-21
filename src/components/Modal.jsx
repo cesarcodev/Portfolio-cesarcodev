@@ -78,7 +78,7 @@ export default function Modal({ verModal, setVerModal, project }) {
                 {project.photos.map((photo) => (
                   <div key={photo} className=" min-w-full relative ">
                     <img
-                      src={`/portfolio-cesarcodev/projects/${photo}`}
+                      src={`/portfolio-cesarcodev/Projects/${photo}`}
                       className="w-full align-top"
                     />
                   </div>

@@ -31,7 +31,7 @@ function Projects() {
                   ))}
                 </div>
                 <img
-                  src={`/portfolio-cesarcodev/projects/${project.cover}`}
+                  src={`/portfolio-cesarcodev/Projects/${project.cover}`}
                   alt={project.title}
                   className="h-48 w-full  object-cover z-0"
                   onClick={() => {
