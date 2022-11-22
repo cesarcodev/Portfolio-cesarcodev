@@ -97,7 +97,7 @@ export default function Modal({ verModal, setVerModal, project }) {
                     stroke="#1D2026"
                     stroke-width="3"
                     fill="none"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   ></path>
                 </svg>
               </button>
@@ -111,12 +111,12 @@ export default function Modal({ verModal, setVerModal, project }) {
                     stroke="#1D2026"
                     stroke-width="3"
                     fill="none"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   ></path>
                 </svg>
               </button>
             </div>
-            <div className="p-5 ">
+            <div className="p-5 dark:bg-gray-700 dark:text-white">
               <div>{project.description}</div>
               <div>
               <span className="font-bold">Tecnologías: </span>   

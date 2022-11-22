@@ -8,17 +8,17 @@ function Projects() {
   const [project, setProject] = useState(null);
   return (
     <>
-      <div className="flex flex-col  md:justify-center h-full md:h-screen px-0 md:px-5 my-28">
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 ">
+      <div className="flex flex-col  md:justify-center h-full md:h-screen px-0 md:px-5 my-0 md:my-28 dark:bg-slate-800">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6  ">
           {ProjectsData.map((project) => (
             <div
               key={project.id}
-              className="border border-black border-1 rounded-lg h-full w-full"
+              className="border border-black border-1 rounded-lg h-full w-full dark:bg-gray-700"
             >
               <div className="p-2 font-bold text-white bg-sky-900">
                 {project.title}
               </div>
-              <div className="relative">
+              <div className="relative ">
                 <div className="absolute right-0">
                   {project.technologies.map((technology) => (
                     <div key={technology} className="rounded-full bg-white p-2">
@@ -40,7 +40,7 @@ function Projects() {
                   }}
                 />
               </div>
-              <div className="p-2">
+              <div className="p-2 dark:text-white" >
                 <div>{project.description}</div>
                 <div className="flex  gap-2 mt-2">
                 {project.github ? (
