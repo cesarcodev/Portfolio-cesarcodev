@@ -3,8 +3,8 @@ import ItemsTechs from "./ItemsTechs";
 export default function About() {
   return (
     <div className="flex flex-col  md:justify-center h-full md:h-screen dark:bg-slate-800 dark:text-white">
-      <div className=" flex flex-col md:flex-row pt-0 md:pt-20 items-center px-0 pb-4 md:pb-0 md:px-20 ">
-        <div className="w-full order-2 md:order-1 md:w-3/5 text-2xl text-justify md:pr-20">
+      <div className=" flex flex-col md:flex-row pt-0 md:pt-20 items-center px-0 pb-4 md:pb-0 md:px-20 mb-8">
+        <div className="w-full order-2 md:order-1 md:w-3/5 text-xl  md:pr-20">
           <p className="mb-2">
             Soy Licenciado en Computación y me especialicé como Desarrollador
             Web
@@ -15,13 +15,13 @@ export default function About() {
             problemas.
           </p>
 
-          {/* <p>
+          <p>
             Me gustan los retos porque me permiten superarme profesionalmente,
             también tengo facilidad para trabajar en equipo y alcanzar todos los
             objetivos planteados.
-          </p> */}
+          </p> 
         </div>
-        <div className="w-3/5 order-1 md:order-2 mb-8 md:w-2/5">
+        <div className="w-3/5 order-1 md:order-2 md:w-2/5 flex items-center justify-center">
           <img
             src="/portfolio-cesarcodev/foto.png"
             className="w-64 rounded-full border-[20px] border-gray-300"

@@ -1,6 +1,6 @@
-export default function Home() {
+export default function Loading({init = false}) {
   return (
-    <div className="flex justify-center h-full  md:h-screen items-center md:flex-row w-full dark:bg-slate-800">
+    <div className={`flex justify-center h-screen ${init ? "" : "pb-64"}  md:pb-0  md:h-screen items-center md:flex-row w-full dark:bg-slate-800`}>
       <div className="text-sky-900 w-32">
         <svg
           version="1.1"

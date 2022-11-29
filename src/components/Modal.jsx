@@ -75,8 +75,8 @@ export default function Modal({ verModal, setVerModal, project }) {
             </button>
             <div className="overflow-hidden">
               <div className="flex flex-nowrap " ref={slideshow}>
-                {project.photos.map((photo) => (
-                  <div key={photo} className=" min-w-full relative ">
+                {project.photos.map((photo, index) => (
+                  <div key={index} className=" min-w-full relative ">
                     <img
                       src={`/portfolio-cesarcodev/Projects/${photo}`}
                       className="w-full align-top"
@@ -95,7 +95,7 @@ export default function Modal({ verModal, setVerModal, project }) {
                   <path
                     d="M11 1 3 9l8 8"
                     stroke="#1D2026"
-                    stroke-width="3"
+                    strokeWidth="3"
                     fill="none"
                     fillRule="evenodd"
                   ></path>
@@ -109,7 +109,7 @@ export default function Modal({ verModal, setVerModal, project }) {
                   <path
                     d="m2 1 8 8-8 8"
                     stroke="#1D2026"
-                    stroke-width="3"
+                    strokeWidth="3"
                     fill="none"
                     fillRule="evenodd"
                   ></path>
@@ -120,8 +120,8 @@ export default function Modal({ verModal, setVerModal, project }) {
               <div>{project.description}</div>
               <div>
               <span className="font-bold">Tecnologías: </span>   
-                {project.technologies.map((technology) => (
-                   <span className="capitalize ">{technology} </span>
+                {project.technologies.map((technology, index) => (
+                   <span key={index} className="capitalize ">{technology} </span>
                 ))}
               </div>
               <div className="flex  gap-2 mt-2">

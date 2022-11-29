@@ -1,10 +1,8 @@
-import  CC  from "/portfolio-cesarcodev/cc.png";
-
 export default function Home() {
   return (
     <div className="flex flex-col justify-center h-full  md:h-screen items-center md:flex-row w-full dark:bg-slate-800">
       <div className="w-full md:w-2/5 md:flex md:pr-8 md:justify-end">
-        <img src={CC} className="md:w-96 w-19" />
+        <img src="/portfolio-cesarcodev/cc.png" className="md:w-96 w-19" />
       </div>
       <div className="w-full md:w-3/5 flex justify-center">
         <div className="text-center">
