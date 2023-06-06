@@ -8,14 +8,15 @@ function Projects() {
   const [project, setProject] = useState(null);
   return (
     <>
-      <div className="flex flex-col  md:justify-center h-full md:h-screen px-0 md:px-5 my-0 md:my-28 dark:bg-slate-800">
+      <div className="md:justify-center h-full px-0 md:px-5 py-0 md:py-28 dark:bg-slate-800">
+    
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6  ">
           {ProjectsData.map((project) => (
             <div
               key={project.id}
               className="border border-black border-1 rounded-lg h-full w-full dark:bg-gray-700"
             >
-              <div className="p-2 font-bold text-white bg-sky-900">
+              <div className="p-2 font-bold text-white bg-sky-900 rounded-t-lg">
                 {project.title}
               </div>
               <div className="relative ">
@@ -87,6 +88,11 @@ function Projects() {
         </div>
       </div>
       <Modal verModal={verModal} setVerModal={setVerModal} project={project} />
+
+
+
+
+
     </>
   );
 }

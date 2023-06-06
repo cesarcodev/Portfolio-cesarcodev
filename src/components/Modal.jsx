@@ -50,7 +50,7 @@ export default function Modal({ verModal, setVerModal, project }) {
   return (
     <>
       {verModal && (
-        <div className="fixed top-0 left-0 w-screen h-full z-10 bg-[#00000080] flex justify-center items-center">
+        <div className="fixed top-0 left-0 w-screen h-full z-10 bg-[#00000080] flex justify-center items-baseline overflow-y-auto overflow-x-hidden">
           <div className="bg-white min-h-[100px] w-full md:w-2/3 rounded  relative drop-shadow-2xl">
             <div className="flex items-center justify-between p-5 rounded-t  bg-sky-900">
               <h2 className="font-semibold  text-lg text-white">

@@ -13,7 +13,7 @@ const Sidebar = ({rutaActual, setRutaActual}) => {
   }
 
   return (
-    <div className="h-screen   md:flex hidden items-center justify-center dark:bg-gray-700">
+    <div className="h-screen md:flex hidden items-center justify-center dark:bg-gray-700">
       <div className="flex flex-col text-center text-1xl w-56 fixed dark:text-white">
         {Navs.map((nav, key) => (
           <a 
