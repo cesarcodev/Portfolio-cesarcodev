@@ -118,10 +118,10 @@ export default function Modal({ verModal, setVerModal, project }) {
             </div>
             <div className="p-5 dark:bg-gray-700 dark:text-white">
               <div>{project.description}</div>
-              <div>
+              <div className="mt-2">
               <span className="font-bold">Tecnologías: </span>   
                 {project.technologies.map((technology, index) => (
-                   <span key={index} className="capitalize ">{technology} </span>
+                   <span key={index} className="uppercase  ">{technology} </span>
                 ))}
               </div>
               <div className="flex  gap-2 mt-2">

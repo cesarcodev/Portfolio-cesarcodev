@@ -42,8 +42,8 @@ function Projects() {
                 />
               </div>
               <div className="p-2 dark:text-white" >
-                <div>{project.description}</div>
-                <div className="flex  gap-2 mt-2">
+                <p className="line-clamp-5">{project.description}</p>
+                <div className="flex h-10 gap-2 mt-2">
                 {project.github ? (
                   <a
                     rel="noopener noreferrer"
@@ -75,13 +75,22 @@ function Projects() {
                       className="mr-1 w-5 h-5"
                     />
 
-                    Demo
+                    Ir al sitio
                   </a>
                 ) : (
                   ""
                 )}
-                
+        
                 </div>
+                        
+                <button  
+                 onClick={() => {
+                  setVerModal(!verModal);
+                  setProject(project);
+                }}
+                className=" mt-2 hover:bg-sky-900 text-white font-bold rounded inline-flex items-center justify-center w-full p-2 transition duration-150 ease-out ">
+                  Ver más
+                  </button>
               </div>
             </div>
           ))}
