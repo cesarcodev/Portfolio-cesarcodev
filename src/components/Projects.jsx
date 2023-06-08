@@ -88,7 +88,7 @@ function Projects() {
                   setVerModal(!verModal);
                   setProject(project);
                 }}
-                className=" mt-2 hover:bg-sky-900 text-white font-bold rounded inline-flex items-center justify-center w-full p-2 transition duration-150 ease-out ">
+                className=" mt-2  bg-sky-900 hover:bg-sky-800   text-white dark:text-white font-bold rounded inline-flex items-center justify-center w-full p-2 transition duration-150 ease-out ">
                   Ver más
                   </button>
               </div>

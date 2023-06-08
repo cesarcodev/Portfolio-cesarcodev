@@ -34,7 +34,7 @@ export const ProjectsData = [
         title: "Gymfitness",
         cover:'gymfitness/portada.png',
         photos:["gymfitness/portada.png","gymfitness/1.png","gymfitness/2.png","gymfitness/3.png","gymfitness/4.png","gymfitness/5.png"],
-        description:'Este es una plantilla de WordPress que desarrollé desde cero con la guía de un curso de Udemy llamado "Desarrollo Profesional de Temas y Plugins de WordPress". Esta plantilla está diseñada para un centro deportivo llamado "Gymfitness" que ofrece clases de yoga, spinning, crossfit y más. También cuenta con una sección de blog, galería, nosotros y contactos. Además, incluye plugins para controlar el estilo del contenido del sitio web. La tecnología que utilicé en esta plantilla son HTML, CSS, JavaScript, PHP y WordPress.',
+        description:'Este es una plantilla de WordPress que desarrollé desde cero con la guía de un curso de Udemy llamado "Desarrollo Profesional de Temas y Plugins de WordPress". Esta plantilla está diseñada para un centro deportivo llamado "Gymfitness" que ofrece clases de yoga, spinning, crossfit y más. También cuenta con una sección de blog, galería, nosotros y contactos. Además, incluye plugins para controlar el estilo del contenido del sitio web. La tecnología que utilicé en esta plantilla son HTML, CSS, JavaScript, PHP y WordPress.git ',
         technologies:['html','css','js', 'php', 'wordpress'],
         github:'',
         link:''
