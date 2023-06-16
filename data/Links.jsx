@@ -2,6 +2,7 @@ export const Navs = [
     { name: "INICIO", key: "home" },
     { name: "SOBRE MI", key: "about" },
     { name: "PROYECTOS", key: "projects" },
+    { name: "EXPERIENCIA", key: "experience" },
   ];
 
  export  const Social = [

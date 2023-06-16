@@ -7,9 +7,11 @@ import Sidebar from "./components/layouts/Sidebar";
 import Loading from "./components/Loading";
 
 
+
 const Home = lazy(() => import('./components/Home'));
 const About = lazy(() => import('./components/About'));
 const Projects = lazy(() => import('./components/Projects'));
+const Experience = lazy(() => import('./components/Experience'));
 
 function App() {
   const [rutaActual, setRutaActual] = useState("home");
@@ -29,6 +31,8 @@ function App() {
             <About />
           ) : rutaActual === "projects" ? (
             <Projects />
+          ) : rutaActual === "experience" ? (
+            <Experience />
           ) : (
             <Loading/>
           )}
