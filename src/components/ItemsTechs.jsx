@@ -27,10 +27,10 @@ const ItemsTechs = ({ tipo }) => {
 
   return (
     <>
-        <div className="w-2/5 bg-sky-900 border-black border-2 text-center text-white font-bold ">
+        <div className="w-2/5 bg-sky-900 text-center text-white font-bold ">
           {title}
         </div>
-        <div className="border-2 border-black p-1 flex flex-wrap gap-3">
+        <div className="p-1 flex flex-wrap gap-3 bg-gray-50 dark:bg-gray-700">
           {items.map((item, index) => (
             <div
               key={index}
