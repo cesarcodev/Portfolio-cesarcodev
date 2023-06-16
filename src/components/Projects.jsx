@@ -14,7 +14,7 @@ function Projects() {
           {ProjectsData.map((project) => (
             <div
               key={project.id}
-              className="border border-black border-1 rounded-lg h-full w-full dark:bg-gray-700"
+              className="border border-black border-1 rounded-lg h-full w-full bg-gray-50 dark:bg-gray-700"
             >
               <div className="p-2 font-bold text-white bg-sky-900 rounded-t-lg">
                 {project.title}
