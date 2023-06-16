@@ -13,15 +13,15 @@ export default function Home() {
             Programador Web
           </p>
           <a
-            className=" bg-blue-900  hover:bg-blue-800 md:text-xl text-white font-bold md:py-4 py-2 md:px-8 px-4 rounded inline-flex items-center"
-            href="/portfolio-cesarcodev/CV-César Castañeda.pdf"
+            className=" bg-blue-900 text-2xl hover:bg-blue-800 md:text-xl text-white font-bold md:py-4 py-2git  md:px-8 px-14 rounded inline-flex items-center"
+            href="/portfolio-cesarcodev/CV - César Castañeda.pdf"
             target="_blank"
             rel="noreferrer"
           >
             <img
               src={`/portfolio-cesarcodev/descargar.png`}
               alt={`icono de descargar`}
-              className={"mr-2 w-4 md:w-6"}
+              className={"mr-2 w-6"}
             />
             <span>Descargar CV</span>
             
