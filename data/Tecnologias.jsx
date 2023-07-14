@@ -10,8 +10,8 @@ export const frontend = [
 export const backend = [
   { name: "PHP", img: "php.png" },
   { name: "WordPress", img: "wordpress.png" },
-  { name: "NodeJs", img: "nodejs.png" },
   { name: "Laravel", img: "laravel.png" },
+  { name: "NodeJs", img: "nodejs.png" },
   { name: "Postgre", img: "postgre.png" },
   { name: "Mysql", img: "mysql.png" },
 ];

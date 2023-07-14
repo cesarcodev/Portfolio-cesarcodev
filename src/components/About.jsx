@@ -2,8 +2,8 @@ import ItemsTechs from "./ItemsTechs";
 
 export default function About() {
   return (
-    <div className="flex flex-col  md:justify-center h-full md:h-screen dark:bg-slate-800 dark:text-white">
-      <div className=" flex flex-col md:flex-row pt-0 md:pt-20 items-center px-0 pb-4 md:pb-0 md:px-20 mb-8">
+    <div className="grid content-center h-full px-0 md:px-5 py-0 md:py-28 dark:bg-slate-800 dark:text-white">
+      <div className=" flex flex-col md:flex-row pt-0 items-center px-0 pb-4 md:pb-0 md:px-20 mb-8">
         <div className="w-full order-2 md:order-1 md:w-3/5 text-xl  md:pr-20">
           <p className="mb-2">
             Soy Licenciado en Computación y me especialicé como Desarrollador
@@ -24,7 +24,7 @@ export default function About() {
         <div className="w-3/5 order-1 md:order-2 md:w-2/5 flex items-center justify-center">
           <img
             src="/portfolio-cesarcodev/foto.png"
-            className="w-64 rounded-full border-[20px] border-gray-300"
+            className="w-64 rounded-full border-[10px] border-gray-300"
           />
         </div>
       </div>
