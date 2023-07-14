@@ -49,6 +49,15 @@ export const ProjectsData = [
         github:'',
         link:''
     },
-    
+      { 
+        id:6,
+        title: "Punto Rojo",
+        cover:'puntorojo/portada.png',
+        photos:["puntorojo/portada.png","puntorojo/1.png", "puntorojo/2.png", "puntorojo/3.png", "puntorojo/4.png","puntorojo/5.png","puntorojo/6.png", "puntorojo/7.png", "puntorojo/8.png"],
+        description:'Líder de equipo en el proyecto "Punto Rojo", Desarrollo del sistema con HTML, CSS, Javascript y PHP nativo. Creación y mantenimiento de base de datos MySql. Mantenimiento de APIs desarrolladas en PHP y probadas con Postman',
+        technologies:['html','css','js', 'php'],
+        github:'',
+        link:''
+    },
   ];
 
