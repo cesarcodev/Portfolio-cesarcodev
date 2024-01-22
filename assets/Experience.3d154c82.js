@@ -1,4 +1,4 @@
-import{a as e,F as d,j as r}from"./index.be7041b0.js";const i=[{id:1,title:"Universidad Nueva Esparta",date:"enero 2015 - marzo 2020",description:"Licenciatura en Computaci\xF3n."}],s=[{id:1,title:"Analista Programador de Aplicaciones Web Avanzado - Seguros Horizonte S.A",date:"febrero 2018 - noviembre 2021",description:`Brindar soluciones de sitios web e intranet de la empresa, desarrollada bajo WordPress. 
+import{a as e,F as d,j as r}from"./index.ee38a155.js";const i=[{id:1,title:"Universidad Nueva Esparta",date:"enero 2015 - marzo 2020",description:"Licenciatura en Computaci\xF3n."}],s=[{id:1,title:"Analista Programador de Aplicaciones Web Avanzado - Seguros Horizonte S.A",date:"febrero 2018 - noviembre 2021",description:`Brindar soluciones de sitios web e intranet de la empresa, desarrollada bajo WordPress. 
 Desarrollar e implementar sistemas web desarrollados con PHP, aplicando mantenimiento y mejoras de ser requeridos.`},{id:2,title:"Desarrollador Web Full Stack - TeamDigital",date:"abril 2021 - abril 2022",description:`Desarrollo y dise\xF1o de Landings Pages en Wordpress. 
 Manejo de Plantillas de Wordpress. 
 Aplicaciones Web con Laravel. 
