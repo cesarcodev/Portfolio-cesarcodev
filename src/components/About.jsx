@@ -23,7 +23,7 @@ export default function About() {
         </div>
         <div className="w-3/5 order-1 md:order-2 md:w-2/5 flex items-center justify-center">
           <img
-            src="/portfolio-cesarcodev/foto.png"
+            src="/portfolio-cesarcodev/foto.webp"
             className="w-64 rounded-full border-[10px] border-gray-300"
           />
         </div>
