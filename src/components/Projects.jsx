@@ -1,14 +1,21 @@
 import { useState } from "react";
 import { ProjectsData } from "../../data/ProjectsData";
+import Html5 from './icons/Html5';
+import Css from './icons/Css';
+import Javascript from './icons/Javascript';
+import Angular from './icons/Angular';
 
-import Modal from "./Modal";
 
+import { Code } from "./icons/Code";
+import Php from "./icons/Php";
+import Symfony from "./icons/Symfony";
 function Projects() {
   const [verModal, setVerModal] = useState(false);
   const [project, setProject] = useState(null);
   return (
     <>
-      <div className="md:justify-center h-full px-0 md:px-5 py-0 md:py-28 dark:bg-slate-800">
+
+      {/* <div className="md:justify-center h-full px-0 md:px-5 py-0 md:py-28 dark:bg-slate-800">
     
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6  ">
           {ProjectsData.map((project) => (
@@ -95,10 +102,87 @@ function Projects() {
             </div>
           ))}
         </div>
+      </div> */}
+      {/* <Modal verModal={verModal} setVerModal={setVerModal} project={project} /> */}
+
+      <div className="md:justify-center h-full ">
+        <div>
+          <div className="border-b-4 border-sky-900 pb-2 flex items-center gap-x-2 ">
+            <Code className="w-8 h-8 dark:text-white" />
+            <p className="dark:text-white text-3xl font-bold">
+              Mis últimos proyectos
+            </p>
+          </div>
+
+          {/* <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-14"> */}
+          <div className="flex flex-col gap-y-24 md:gap-y-10 mt-6" >
+            {ProjectsData.map((project) => (
+              // <article key={project.id}>
+              //   <h3 className={`text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2 ${project.height}`}>
+              //     {project.title}
+              //   </h3>
+              //   <p className="text-lg mb-4 dark:text-white text-pretty">{project.description}</p>
+              //   <ul className="flex gap-3 flex-wrap mb-2">
+              //     {project.technologies.map((tag, index) => (
+              //       <li key={index}>
+              //         <span className={`flex gap-x-2 rounded-full items-center text-xs ${tag.class} py-1 px-2`}>
+              //          {tag.icon == 'Html5' && <Html5 className="h-5 w-5" />}
+              //           {tag.icon == "Css" && <Css className="h-5 w-5" />}
+              //           {tag.icon == "Javascript" && <Javascript className="h-5 w-5" />}
+              //           {tag.icon == "Angular" && <Angular className="h-5 w-5" />} 
+              //           {tag.icon == "Php" && <Php className="h-5 w-5" />}
+              //           {tag.name}
+              //         </span>
+              //       </li>
+              //     ))}
+              //   </ul>
+              //   <img
+              //   loading="lazy"
+              //   className="rounded shadow-2xl shadow-white/10 h-60 md:h-96"
+              //   src={project.image}
+              //   alt={`Captura de pantalla del proyecto ${project.image}`}
+              // />
+              // </article>
+
+              <article key={project.id} className="flex flex-col space-x-0 space-y-0 group md:flex-row md:space-x-0 md:space-y-0 gap-5">
+                <div className="w-full mb:w-2/5">
+                  <img className="rounded shadow-2xl shadow-white/10 h-60 md:h-64 md:w-96" loading="lazy" src={project.image} alt={`Captura de pantalla del proyecto ${project.image}`} />
+
+                </div>
+
+                <div className="w-full mb:w-3/5">
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+                    {project.title}
+                  </h3>
+                  <div className="flex flex-wrap mt-2">
+                     <ul className="flex gap-3 flex-wrap mb-2">
+                      {project.technologies.map(tag => (
+                        <li key={tag.id}>
+                          <span
+                            className={"flex gap-x-2 rounded-full text-xs py-1 px-2 bg-blue-900 text-white"}
+                          >
+                            {tag.icon == 'Html5' && <Html5 className="h-5 w-5" />}
+                            {tag.icon == "Css" && <Css className="h-5 w-5" />}
+                            {tag.icon == "Javascript" && <Javascript className="h-5 w-5" />}
+                            {tag.icon == "Angular" && <Angular className="h-5 w-5" />}
+                            {tag.icon == "Php" && <Php className="h-5 w-5" />}
+                            {tag.icon == "Symfony" && <Symfony className="h-5 w-5" />}
+                            {tag.name}
+                          </span>
+                        </li>
+                      ))}
+                    </ul> 
+
+
+                    <div className="mt-2 text-gray-700 dark:text-gray-400">{project.description}</div>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+
+        </div>
       </div>
-      <Modal verModal={verModal} setVerModal={setVerModal} project={project} />
-
-
 
 
 

@@ -5,6 +5,7 @@ export const frontend = [
   { name: "Javascript", img: "js.png" },
   { name: "ReactJs", img: "react.png" },
   { name: "Tailwindcss", img: "tailwindcss.png" },
+  { name: "AngularJs", icon: "Angular" },
 ];
 
 export const backend = [
@@ -12,8 +13,9 @@ export const backend = [
   { name: "WordPress", img: "wordpress.png" },
   { name: "Laravel", img: "laravel.png" },
   { name: "NodeJs", img: "nodejs.png" },
-  { name: "Postgre", img: "postgre.png" },
+  { name: "PostgreSQL", img: "postgre.png" },
   { name: "Mysql", img: "mysql.png" },
+  { name: "Symfony", icon: "Symfony" },
 ];
 
 export const tool = [

@@ -1,13 +1,14 @@
 export const Navs = [
     { name: "INICIO", key: "home" },
-    { name: "SOBRE MI", key: "about" },
-    { name: "PROYECTOS", key: "projects" },
     { name: "EXPERIENCIA", key: "experience" },
+    { name: "PROYECTOS", key: "projects" },
+    { name: "SOBRE MI", key: "about" },
+    { name: "CONTACTO", key: "contact" },
   ];
 
  export  const Social = [
-     { name: "Github", url: "https://github.com/cesarcodev/" },
-     { name: "Linkedin", url: "https://www.linkedin.com/in/cesarcodev/" },
-     { name: "Gmail", url: "mailto:cesarce735@gmail.com" },
+    { name: "Linkedin", url: "https://www.linkedin.com/in/cesarcodev/" },
+    { name: "Github", url: "https://github.com/cesarcodev/" },
+    { name: "Gmail", url: "Cesarce735@gmail.com" },
   ];
 

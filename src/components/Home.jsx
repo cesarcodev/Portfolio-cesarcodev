@@ -1,34 +1,39 @@
+import SocialPill from "./SocialPill";
+import { Social } from "../../data/Links";
+import Badge from "./Badge";
+
+
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center h-full  md:h-screen items-center md:flex-row w-full dark:bg-slate-800">
-      <div className="w-full md:w-2/5 md:flex md:pr-8 md:justify-end">
-        <img src="/portfolio-cesarcodev/cc.png" className="md:w-96 w-19" />
-      </div>
-      <div className="w-full md:w-3/5 flex justify-center">
-        <div className="text-center">
-          <p className="text-lg mt-2 md:text-4xl leading-tight font-bold mb-5 dark:text-white ">
-            ¡Hola! <br />
-            Mi nombre es César Castañeda
-            <br />
-            Programador Web
-          </p>
+    <div>
+      <div>
+        <h1 className="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-wrap gap-4 pb-6 lg:pb-10">
+          ¡Hola! Soy CesarCodev 
           <a
-            className=" bg-blue-900 text-2xl hover:bg-blue-800 md:text-xl text-white font-bold md:py-4 py-2git  md:px-8 px-14 rounded inline-flex items-center"
-            href="/portfolio-cesarcodev/CV - César Castañeda.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={`/portfolio-cesarcodev/descargar.png`}
-              alt={`icono de descargar`}
-              className={"mr-2 w-6"}
-            />
-            <span>Descargar CV</span>
-            
-          </a>
-
+          href="https://www.linkedin.com/in/cesarcodev"
+          target="_blank"
+          rel="noopener"
+          className="flex justify-center items-center hover:scale-105 transition"
+        >
+          <Badge text="Disponible para trabajar"/>
+        </a>
+        </h1>
+        <div className="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white">
+          <h2 className="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white">
+            <span className="text-sky-800 dark:text-sky-500 font-bold">Desarrollador web </span> 
+            <span >especializado en</span>
+            <span className="text-sky-800 dark:text-sky-500 font-bold"> aplicaciones web</span> 
+            <br />
+            <span>Con +4 años de experiencia.</span>            
+          </h2>
         </div>
       </div>
+      <div className="flex gap-2 md:gap-4 mt-8 flex-wrap">
+        {Social.map((link, index) => (
+            <SocialPill title={link.name} url={link.url} key={index} />
+          ))}
+            <SocialPill title="Ver CV" url="/portfolio-cesarcodev/CV - César Castañeda.pdf"  />
+      </div> 
     </div>
   );
 }

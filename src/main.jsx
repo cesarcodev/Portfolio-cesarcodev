@@ -8,8 +8,8 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <Suspense fallback={<Loading init={true} />}>
+     {/* <Suspense fallback={<Loading init={true} />}> */}
       <App />
-     </Suspense>
+     {/* </Suspense> */}
   </React.StrictMode>
 )

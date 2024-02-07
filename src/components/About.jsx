@@ -1,43 +1,52 @@
 import ItemsTechs from "./ItemsTechs";
+import Profile from "./icons/Profile";
+
 
 export default function About() {
   return (
-    <div className="grid content-center h-full px-0 md:px-5 py-0 md:py-28 dark:bg-slate-800 dark:text-white">
-      <div className=" flex flex-col md:flex-row pt-0 items-center px-0 pb-4 md:pb-0 md:px-20 mb-8">
-        <div className="w-full order-2 md:order-1 md:w-3/5 text-xl  md:pr-20">
-          <p className="mb-2">
-            Soy Licenciado en Computación y me especialicé como Desarrollador
-            Web
+    <div className="md:justify-center h-full ">
+      <div>
+        <div className="border-b-4 border-sky-900 pb-2 flex items-center gap-x-2">
+          <Profile className="w-8 h-8 dark:text-white" />
+          <p className="dark:text-white text-3xl font-bold">
+            Sobre mi
           </p>
-          <p className="mb-2">
-            Tengo la creencia de que siempre se puede aprender algo nuevo y
-            encontrar formas mucho más fáciles y rápidas de solucionar los
-            problemas.
-          </p>
+        </div>
+        <div className="mt-6">
+          <article className="flex flex-col md:flex-row gap-14 justify-center items-center dark:text-white">
+            <div
+              className="[&>p]:mb-4 [&>p>strong]:font-semibold text-pretty order-2 md:order-1"
+            >
+              <p>
 
-          <p>
-            Me gustan los retos porque me permiten superarme profesionalmente,
-            también tengo facilidad para trabajar en equipo y alcanzar todos los
-            objetivos planteados.
-          </p> 
-        </div>
-        <div className="w-3/5 order-1 md:order-2 md:w-2/5 flex items-center justify-center">
-          <img
-            src="/portfolio-cesarcodev/foto.webp"
-            className="w-64 rounded-full border-[10px] border-gray-300"
-          />
-        </div>
-      </div>
-      <div className="h-1/3">
-        <div className="grid grid-cols-1 md:grid-cols-3 px-0 md:px-20 gap-5">
-          <div>
-            <ItemsTechs tipo="front" />
-          </div>
-          <div>
-            <ItemsTechs tipo="back"  />
-          </div>
-          <div>
-            <ItemsTechs tipo="tool"  />
+                Soy César Castañeda, <strong className="text-sky-800 dark:text-sky-500">Licenciado en Computación</strong> que se especializó como <strong className="text-sky-800 dark:text-sky-500">Desarrollador Web Full Stack</strong>.
+                </p>
+                <p>  
+                 Tengo experiencia en el desarrollo de sistemas web para diferentes tipos de empresas, desde startups hasta grandes corporaciones. He trabajado en proyectos de <strong className="text-sky-800 dark:text-sky-500">e-business, e-commerce y gestión de sistemas</strong>, aportando buenas prácticas de programación y soluciones innovadoras.
+              </p>
+
+              <p>
+              Actualmente estoy trabajando como <strong className="text-sky-800 dark:text-sky-500">freelancer de manera remota</strong>, desarrollando sistemas web para diversos clientes y sectores.
+              </p>
+
+
+            </div>
+
+            <img loading="lazy" src="/portfolio-cesarcodev/foto.webp" className="rounded-full h-64 order-1 md:order-2"  alt="Foto de CesarCodev" title="Foto de CesarCodev" />
+
+          </article>
+          <div className="mt-6">
+            <div className="grid grid-cols gap-5">
+              <div>
+                <ItemsTechs tipo="front" />
+              </div>
+              <div>
+                <ItemsTechs tipo="back" />
+              </div>
+              <div>
+                <ItemsTechs tipo="tool" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
