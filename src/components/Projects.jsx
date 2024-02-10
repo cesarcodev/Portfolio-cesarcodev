@@ -114,35 +114,8 @@ function Projects() {
             </p>
           </div>
 
-          {/* <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-14"> */}
           <div className="flex flex-col gap-y-24 md:gap-y-10 mt-6" >
             {ProjectsData.map((project) => (
-              // <article key={project.id}>
-              //   <h3 className={`text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2 ${project.height}`}>
-              //     {project.title}
-              //   </h3>
-              //   <p className="text-lg mb-4 dark:text-white text-pretty">{project.description}</p>
-              //   <ul className="flex gap-3 flex-wrap mb-2">
-              //     {project.technologies.map((tag, index) => (
-              //       <li key={index}>
-              //         <span className={`flex gap-x-2 rounded-full items-center text-xs ${tag.class} py-1 px-2`}>
-              //          {tag.icon == 'Html5' && <Html5 className="h-5 w-5" />}
-              //           {tag.icon == "Css" && <Css className="h-5 w-5" />}
-              //           {tag.icon == "Javascript" && <Javascript className="h-5 w-5" />}
-              //           {tag.icon == "Angular" && <Angular className="h-5 w-5" />} 
-              //           {tag.icon == "Php" && <Php className="h-5 w-5" />}
-              //           {tag.name}
-              //         </span>
-              //       </li>
-              //     ))}
-              //   </ul>
-              //   <img
-              //   loading="lazy"
-              //   className="rounded shadow-2xl shadow-white/10 h-60 md:h-96"
-              //   src={project.image}
-              //   alt={`Captura de pantalla del proyecto ${project.image}`}
-              // />
-              // </article>
 
               <article key={project.id} className="flex flex-col space-x-0 space-y-0 group md:flex-row md:space-x-0 md:space-y-0 gap-5">
                 <div className="w-full mb:w-2/5">

@@ -44,7 +44,6 @@ const ItemsTechs = ({ tipo }) => {
             ) : (
               // Renderiza la imagen
               <img
-                loading="lazy"
                 src={`/portfolio-cesarcodev/icons/${item.img}`}
                 alt={`imagen de ${item.name}`}
                 className="mr-2"
